@@ -4,25 +4,23 @@
 const registerBtn = document.querySelector(".register-btn");
 registerBtn.addEventListener("click", () => {
   alert("Register/Login button clicked!");
-  // Yeswanth code: You can redirect to a login page or open a modal:
+  // Yeswanth code: In a real project, redirect to or display a login/register modal:
   // window.location.href = "/login.html";
 });
 
-// Yeswanth code: "Get Started" CTA button
+// Yeswanth code: "Get Started" CTA button in the hero
 const ctaBtn = document.querySelector(".cta-btn");
 ctaBtn.addEventListener("click", () => {
-  alert("CTA button clicked - let's get you started on YesRay!");
-  // Yeswanth code: Possibly direct to a signup page:
-  // window.location.href = "/signup.html";
+  alert("Let’s get you started with YesRay!");
+  // Yeswanth code: This can be replaced with your own logic (e.g., sign-up form).
 });
 
-// Yeswanth code: Simple event for the contact form
+// Yeswanth code: Handle the contact form submission
 const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
   contactForm.addEventListener("submit", (event) => {
-    event.preventDefault(); // stop form from submitting
-    alert("Thank you for reaching out! We'll be in touch soon.");
-    // Yeswanth code: send form data to a server or handle it as needed
+    event.preventDefault(); // prevent page refresh
+    alert("Thanks for reaching out! We’ll respond as soon as possible.");
     contactForm.reset(); // optional: clear the form
   });
 }
