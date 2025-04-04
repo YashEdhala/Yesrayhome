@@ -1,59 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>YesRay - Home</title>
-
-  <!-- Yeswanth code: Linking to external CSS for styling -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>YesRay - Sleek Home</title>
+  <!-- Yeswanth code: Link to Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+  >
+  <!-- Yeswanth code: Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Yeswanth code: Start of header and navigation bar -->
+  <!-- Yeswanth code: Navigation Bar -->
   <header>
     <nav class="navbar">
-      <!-- Yeswanth code: Optional site title or logo -->
       <div class="logo">YesRay</div>
-
-      <!-- Yeswanth code: Navigation links -->
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
-
-      <!-- Yeswanth code: Register/Login button (handled by JavaScript) -->
       <button class="register-btn">Register/Login</button>
     </nav>
   </header>
 
-  <!-- Yeswanth code: Main page content -->
+  <!-- Yeswanth code: Main Content -->
   <main>
+    <!-- Yeswanth code: Hero Section with Gradient and Eye-catching CTA -->
     <section id="home" class="hero-section">
-      <h1>Welcome to YesRay</h1>
-      <p>Your one-stop platform to streamline your job search process.</p>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Empower Your Job Search</h1>
+        <p>Supercharge your career with custom resumes, curated listings, and personalized insights.</p>
+        <button class="cta-btn">Get Started</button>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About Us</h2>
+    <!-- Yeswanth code: Features Section -->
+    <section class="features-section">
+      <h2>Core Highlights</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon-circle">🔎</div>
+          <h3>Job Discovery</h3>
+          <p>Explore diverse roles tailored to your skills and goals. It’s never been easier to find the perfect match.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">✍</div>
+          <h3>Resume Tailoring</h3>
+          <p>Instantly optimize your resume for each application—stand out in any ATS or recruiter’s inbox.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">✅</div>
+          <h3>Application Tracking</h3>
+          <p>Keep tabs on every stage of the hiring process with easy-to-use tracking tools and reminders.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">✨</div>
+          <h3>Personalized Insights</h3>
+          <p>Receive curated job recommendations, skill gaps analysis, and career tips just for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Yeswanth code: About Section with Another Gradient -->
+    <section id="about" class="about-section">
+      <h2>About YesRay</h2>
       <p>
-        We help you discover relevant job listings, tailor your resume automatically,
-        track applications and progress, and get personalized career recommendations.
+        We’re dedicated to transforming the way you search, apply, and grow in your career. 
+        From automated resume tailoring to real-time job tracking, YesRay is built to help you 
+        find meaningful work and excel in it.
+      </p>
+      <p>
+        Our platform integrates modern tech—like AI-driven recommendations—to simplify every 
+        step of the application process. Join thousands of job seekers who rely on YesRay to 
+        launch their next professional chapter.
       </p>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Have questions or feedback? Reach out to us anytime.</p>
-      <!-- Yeswanth code: You could add a contact form here if desired -->
+    <!-- Yeswanth code: Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Get in Touch</h2>
+      <p>
+        Have questions, feedback, or just want to say hello? Our support team is here to help. 
+        We’d love to hear from you.
+      </p>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
 
-  <!-- Yeswanth code: Footer section -->
+  <!-- Yeswanth code: Footer -->
   <footer>
     <p>&copy; 2025 YesRay. All rights reserved.</p>
   </footer>
 
-  <!-- Yeswanth code: Linking to external JavaScript for event handling -->
+  <!-- Yeswanth code: External JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
