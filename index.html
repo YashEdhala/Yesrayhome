@@ -1,65 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .main-info {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-        }
-        .main-info h1 {
-            margin: 0;
-        }
-        .hobbies, .lewis, .course, .job {
-            background: #e7e7e7;
-            padding: 15px;
-            margin-bottom: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>YesRay - Home</title>
+
+  <!-- Yeswanth code: Linking to external CSS for styling -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <header class="main-info">
-            <h1>[Your First and Last Name]</h1>
-            <h1>Preferred Name: [Your Preferred Name]</h1>
-        </header>
+  <!-- Yeswanth code: Start of header and navigation bar -->
+  <header>
+    <nav class="navbar">
+      <!-- Yeswanth code: Optional site title or logo -->
+      <div class="logo">YesRay</div>
 
-        <section class="lewis">
-			<h2>Year at Lewis: [Your Years at Lewis]</h2>
-			<h2>Lewis major/minor/concentrations: [Your major/minor/concentrations]</h2>
-			<h2>Reasons for pursuing this degree: [Your reasons for pursuing the degree]</h2>
-        </section>
+      <!-- Yeswanth code: Navigation links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
 
-		<section class="course">
-            <h2>Reasons for Taking This Course</h2>
-            <p>[Your reasons for taking this course]</p>
-        </section>
+      <!-- Yeswanth code: Register/Login button (handled by JavaScript) -->
+      <button class="register-btn">Register/Login</button>
+    </nav>
+  </header>
 
-		<section class="job">
-            <p>Current/Recent Job</p>
-			<p>[Your job responsibilities]</p>
-        </section>		
+  <!-- Yeswanth code: Main page content -->
+  <main>
+    <section id="home" class="hero-section">
+      <h1>Welcome to YesRay</h1>
+      <p>Your one-stop platform to streamline your job search process.</p>
+    </section>
 
-        <section class="hobbies">
-            <h2>Hobbies and Special Interests</h2>
-            <p>[Your hobbies or special interests]</p>
-        </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We help you discover relevant job listings, tailor your resume automatically,
+        track applications and progress, and get personalized career recommendations.
+      </p>
+    </section>
 
-        <section class="fun-fact">
-            <h2>Fun Fact</h2>
-            <p>[A fun fact about yourself]</p>
-        </section>
-    </div>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? Reach out to us anytime.</p>
+      <!-- Yeswanth code: You could add a contact form here if desired -->
+    </section>
+  </main>
+
+  <!-- Yeswanth code: Footer section -->
+  <footer>
+    <p>&copy; 2025 YesRay. All rights reserved.</p>
+  </footer>
+
+  <!-- Yeswanth code: Linking to external JavaScript for event handling -->
+  <script src="script.js"></script>
 </body>
 </html>
